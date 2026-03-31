@@ -2,9 +2,7 @@ import axios from "axios";
 
 // API base URL — in dev, Vite proxy forwards /api to localhost:5000
 const API = axios.create({
-  baseURL: import.meta.env.PROD 
-    ? 'https://ecotech-backend-25e3.onrender.com/api' 
-    : '/api',
+  baseURL: 'https://ecotech-backend-25e3.onrender.com/api',
   headers: { "Content-Type": "application/json" },
 });
 
